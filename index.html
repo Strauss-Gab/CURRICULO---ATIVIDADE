@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            overflow: hidden; /* Impede que a página tenha barras de rolagem no body */
+            background-image: url("Pergaminho.png");
+            background-size: cover; /* A imagem bobre toda a tela */
+            background-position: center; /* Centraliza a imagem */
+           
+        }
+
+        #bloco-esquerda {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        #foto {
+            background-size: cover; /* A imagem cobre toda a tela */
+            padding: 30px;
+            color: white;
+            height: 50%;
+            margin-left: 60px;
+        }
+
+        /* CSS para a imagem de perfil */
+        #foto img {
+            width: 150px; /* Largura da imagem */
+            height: 150px; /* Altura da imagem */
+            border-radius: 50%; /* Torna a imagem redonda */
+            object-fit: cover; /* Garante que a imagem se ajusta corretamente */
+            border: 3px solid white; /* Opcional: adiciona borda branca */
+        }
+
+        #indice {
+            padding: 20px;
+            color: white;
+            height: 50%;
+            flex-grow: 1; /* Faz com que o índice ocupe o restante do espaço */
+            margin-left: 60px;
+        }
+        /* Estilos para os links dentro do índice */
+        #indice a {
+            color: white; /* Cor amarela para os links */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        /* Estilo para os links quando o mouse passa sobre eles */
+        #indice a:hover {
+            color:deepskyblue; /* Cor laranja quando passar o mouse */
+        }
+
+        /*E-mail do contato*/
+       
+        
+        #bloco-direita {
+            align-items: center; /* Alinha o conteúdo verticalmente */
+            height: 100vh;
+            padding: 80px;
+            max-width: 1200px;
+            margin-right: 40px;
+            text-align: justify;
+            color: white;
+            width: 80%;
+            height: 100%;
+            overflow-y: auto; /* Torna o conteúdo rolável */
+            justify-content: center; /* Alinha o conteúdo horizontalmente */
+            align-items: center; /* Alinha o conteúdo verticalmente */
+            flex-direction: column; /* Garante que os itens dentro do bloco direita fiquem em coluna */
+            margin-bottom: 100px; /* Adiciona o espaço em branco após o conteúdo */
+            border-left: 3px solid white; /* Borda à direita para dividir */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bloco-esquerda">
+        <div id="foto">
+            
+            <!-- Coloque sua foto aqui -->
+            <img src="fotoPerfil.jpg" alt="Minha Foto">
+            <h1>Harry Potter</h1>
+        </div>
+        <div id="indice">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação Academica</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#competencias">Competências</a></li>
+                <li><a href="#hobbie">Hobbies</a></li>
+                <li><a href="#conquista">Comquistas</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="bloco-direita">
+        <h2 id="sobre">Sobre</h2>
+        <p>Sou um bruxo talentoso, com habilidades excepcionais em diversas áreas da magia. Graduado pela Escola de Magia e Bruxaria de Hogwarts, onde fui designado para a Casa Grifinória, demonstrei coragem, lealdade e habilidades excepcionais em Defesa Contra as Artes das Trevas, Transfiguração e Feitiçaria. Durante minha jornada, desempenhei papéis cruciais em várias missões para proteger o mundo bruxo contra forças das trevas, incluindo a derrota de Lord Voldemort, que ameaçava a paz e a segurança.</p>
+        <p>Tenho experiência em trabalho em equipe, liderança, resolução de problemas sob pressão e uma capacidade única de enfrentar desafios impossíveis. Fui parte integral de uma equipe que salvou o Mundo Bruxo em várias ocasiões e sempre procuro aprender e crescer, tanto no campo mágico quanto pessoal.</p>
+        <p>Estou sempre em busca de novos desafios e oportunidades de aprendizado, e pronto para usar minhas habilidades para defender o bem e promover a harmonia no mundo mágico.</p>
+        <h2 id="experiencia">Experiência</h2>
+        <h3>Líder da Defesa Contra as Artes das Trevas - Hogwarts</h3>
+        <h4>Hogwarts School of Witchcraft and Wizardry | 1991 - 1998</h4>
+        <ul>
+            <li>Fui parte essencial da luta contra as forças das trevas durante os sete anos em Hogwarts, liderando meus amigos e colegas em diversas batalhas contra seguidores de Voldemort.</li>
+            <li>Participei ativamente da formação da "D.A." (Defesa Armada), um grupo secreto para ensinar estudantes a se defenderem das Artes das Trevas.</li>
+            <li>Derrotei o Lorde das Trevas, Voldemort, em sua tentativa de controlar o mundo bruxo.</li>
+        </ul>
+        <h3>Vencedor do Torneio Tribruxo</h3>
+        <h4>Hogwarts School of Witchcraft and Wizardry | 1994</h4>
+        <ul>
+            <li>Participei do Torneio Tribruxo como campeão inesperado de Hogwarts, enfrentando criaturas mágicas perigosas e desafiando desafios complexos para proteger a escola e seus alunos.</li>
+            <li>Demonstrei coragem, inteligência e habilidades em magia sob intensa pressão.</li>
+        </ul>
+        <h3>Membro da Ordem da Fênix</h3>
+        <h4>Secret Order of the Phoenix | 1995 - 1998</h4>
+        <ul>
+            <li>Lutei contra os Comensais da Morte em várias batalhas, ajudando a proteger o Ministério da Magia e a sociedade bruxa da ascensão do Lorde das Trevas.</li>
+            <li>Colaborei com outros membros da Ordem para resgatar vítimas e impedir ataques a bruxos e bruxas inocentes.</li>
+        </ul>
+        <h3>Profissional de Auror - Ministério da Magia</h3>
+        <h4>Ministério da Magia | 1998 - Presente</h4>
+        <ul>
+            <li>Trabalhei como Auror após a derrota de Voldemort, buscando e neutralizando bruxos das trevas e criminosos mágicos.</li>
+            <li>Resolvi casos complexos envolvendo magia negra e trabalhei em colaboração com outras entidades governamentais para manter a segurança no mundo mágico.</li>
+        </ul>
+        <h2 id="formacao">Formação Academica</h2>
+        <h3>Escola de Magia e Bruxaria de Hogwarts</h3>
+        <h4>1991 - 1998</h4>
+        <ul>
+            <li>Casa: Grifinória</li>
+            <li>Diploma: Nível Avançado de Magia</li>
+            <li>Pricipais Diciplina</li>
+            <ul>
+                <li>Defesa Contra as Artes das Trevas</li>
+                <li>Feitiçaria</li>
+                <li>Poções</li>
+                <li>Transfiguração</li>
+                <li>Herbologia</li>
+                <li>Astronomia</li>
+                <li>História da Magia</li>
+                <li>Trato das Criaturas Mágicas</li>
+            </ul>
+        </ul>
+        <h2 id="habilidades">Habilidades</h2>
+        <ul>
+            <li>Magia Avançada:</li>
+            <p>Habilidade excepcional em feitiçaria, especialmente em Defesa Contra as Artes das Trevas, transfiguração e encantamentos.</p>
+            <p>Experiência em feitiços complexos, como o Expelliarmus, Expecto Patronum e Expecto Patronum.</p>
+            <li>Defesa Contra as Artes das Trevas:</li>
+            <p>Proficiente em combate contra as Artes das Trevas, incluindo a habilidade de enfrentar e derrotar criaturas e bruxos das trevas.</p>
+            <p>Criador da Defesa Armada (D.A.), onde ensinei feitiços de defesa aos colegas de Hogwarts.</p>
+            <li>Liderança e Trabalho em Equipe:</li>
+            <p>Demonstrou habilidades excepcionais de liderança durante a luta contra Lord Voldemort e suas forças, coordenando esforços com outros bruxos e bruxas, incluindo a Ordem da Fênix e a D.A.</p>
+            <p>Tomada de decisões rápidas e eficazes em situações de crise.</p>
+            <li>Resolução de Problemas Sob Pressão:</li>
+            <p>Capacidade de tomar decisões cruciais em momentos de alta pressão, seja durante o Torneio Tribruxo, batalhas contra os Comensais da Morte ou operações secretas para salvar aliados.</p>
+            <li>Inteligência e Criatividade:</li>
+            <p>Habilidade em resolver enigmas mágicos e quebra-cabeças complexos, muitas vezes com soluções inovadoras (ex.: a resolução do enigma da Caverna de Horcruxes).</p>
+            <li>Relacionamento Interpessoal:</li>
+            <p>Capacidade de trabalhar com diversos tipos de pessoas, mantendo boas relações mesmo em situações desafiadoras, seja com amigos, professores ou colegas de missão.</p>
+            <li>Destreza com Vassoura:</li>
+            <p>Grande habilidade em quadribol, destacando-se como apanhador da equipe de quadribol de Gryffindor, e habilidade em voar sob pressão.</p>
+        </ul>
+        <h2 id="competencias">Competências</h2>
+        <ul>
+            <li>Gestão de Crises e Tomada de Decisões:</li>
+            <p>Habilidade comprovada em tomar decisões rápidas e eficazes em situações de alto risco, como batalhas contra as forças das trevas e durante o Torneio Tribruxo.</p>
+            <p>Capacidade de liderar em momentos de crise, garantindo a segurança e a união do grupo.</p>
+            <li>Resolução de Conflitos:</li>
+            <p>Capacidade de mediar conflitos e encontrar soluções pacíficas quando necessário, mesmo em situações tensas, como nas interações com seus inimigos e aliados em Hogwarts.</p>
+            <li>Trabalho Sob Pressão:</li>
+            <p>Experiência em lidar com situações de extrema pressão, como enfrentar desafios perigosos e tomar decisões críticas enquanto mantém o foco e a eficácia.</p>
+            <li>Adaptabilidade e Aprendizado Contínuo:</li>
+            <p>Capacidade de se adaptar rapidamente a novos ambientes e aprender habilidades avançadas, como quando Harry aprendeu novos feitiços para proteger seus amigos e a si mesmo, ou quando teve que estudar por conta própria para derrotar inimigos imprevistos.</p>
+            <li>Habilidade em Estratégia e Planejamento:</li>
+            <p>Competência em desenvolver e executar estratégias complexas, como durante a luta contra Voldemort e seus seguidores, ou no planejamento de missões para resgatar aliados ou impedir ataques das trevas.</p>
+            <li>Empatia e Trabalho em Equipe:</li>
+            <p>Habilidade de trabalhar eficazmente com outros, estabelecendo laços de confiança e colaboração, o que o torna um excelente líder e amigo. Harry constantemente motivou e apoiou seus amigos e colegas, seja na D.A. ou em situações mais pessoais.</p>
+            <li>Autodisciplina e Determinação:</li>
+            <p>Determinação incansável para alcançar seus objetivos, mesmo diante de grandes obstáculos, como quando enfrentou desafios sobrenaturais ou adversários mais poderosos.</p>
+            <li>Comunicação Eficaz:</li>
+            <p>Habilidade em se comunicar claramente, seja em situações de ensino (como na D.A.) ou durante batalhas e momentos decisivos, onde a comunicação rápida e clara era crucial para o sucesso da missão.</p>
+        </ul>
+        <h2 id="hobbie">Hobbies</h2>
+        <ul>
+            <li>Quadribol:</li>
+            <p>Apanhador do time de Quadribol da Grifinória em Hogwarts. Gosta de voar e competir, sendo um excelente jogador, com diversas vitórias, incluindo um campeonato importante para sua casa.</p>
+            <li>Leitura:</li>
+            <p>Embora nem sempre tenha sido um estudante aplicado, Harry possui um gosto pela leitura, especialmente por livros de história da magia, feitiçaria e alguns textos sobre criaturas mágicas.</p>
+            <p>Apreciava ler sobre a história do mundo bruxo, o que o ajudou a se preparar para os desafios enfrentados.</p>
+            <li>Exploração e Aventuras:</li>
+            <p>Gosta de explorar locais novos e misteriosos, como a Floresta Proibida e outras áreas de Hogwarts e além, demonstrando sua curiosidade natural. Frequentemente se encontra em situações inesperadas e desafiadoras.</p>
+            <li>Apoio e Proteção aos Amigos:</li>
+            <p>Embora não seja um hobby tradicional, Harry valoriza muito o tempo que passa com seus amigos e aliados, sempre disposto a ajudar e proteger aqueles que ama. Este "hobby" reflete seu profundo senso de lealdade e amizade.</p>
+            <li>Estudo de Feitiçaria Avançada:</li>
+            <p>Harry desenvolveu um interesse por aprender mais sobre magia, especialmente em áreas que envolvem Defesa Contra as Artes das Trevas e feitiçaria aplicada. Esse interesse cresceu ao longo de sua trajetória e continua com ele no trabalho como Auror.</p>
+        </ul>
+        <h2 id="conquista">Conquistas</h2>
+        <ul>
+            <li>Derrota de Lord Voldemort</li>
+            <p>Derrotei Lord Voldemort, o maior bruxo das trevas da história, em diversas ocasiões, culminando na sua derrota definitiva na Batalha de Hogwarts, garantindo a segurança do mundo bruxo.</p>
+            <li>Vencedor do Torneio Tribruxo</li>
+            <p>Participei e venci o Torneio Tribruxo em 1994, enfrentando desafios perigosos e superando competidores de outras escolas de magia, como Beauxbatons e Durmstrang.</p>
+            <li>Fundador da Defesa Armada (D.A.)</li>
+            <p>Criei e liderei a Defesa Armada, um grupo secreto de estudantes de Hogwarts, para ensinar feitiços de defesa contra as artes das trevas e preparar os alunos para os desafios impostos pela ascensão de Voldemort.</p>
+            <li>Campeão de Quadribol pela Grifinória</li>
+            <p>Apanhador do time de Quadribol da Grifinória, ajudando a equipe a conquistar diversas vitórias em campeonatos escolares.</p>
+            <li>Resgate de Sirius Black e outros membros da Ordem da Fênix</li>
+            <p>Participei de diversas missões de resgate, incluindo a libertação de Sirius Black da Torre de Azkaban e a proteção de outros aliados da Ordem da Fênix contra os Comensais da Morte.</p>
+            <li>Destruição das Horcruxes de Voldemort</li>
+            <p>Juntamente com meus amigos Ron Weasley e Hermione Granger, localizei e destruí as Horcruxes de Voldemort, que continham fragmentos de sua alma, ajudando a enfraquecê-lo antes da batalha final.</p>
+            <li>Líder na Batalha de Hogwarts</li>
+            <p>Fui um dos principais líderes na Batalha de Hogwarts, ajudando a coordenar a luta contra os Comensais da Morte e protegendo a escola e seus habitantes.</p>
+            <li>Reconstrução do Mundo Bruxo Pós-Voldemort</li>
+            <p>Contribuí para a restauração da paz no mundo bruxo após a derrota de Voldemort, trabalhando como Auror e membro da comunidade mágica para ajudar a curar os danos causados pela guerra.</p>
+        </ul>
+        <h2 id="contato">Contato</h2>
+        <p>E-mail: harry.bruxo@gmail.com  Telefone: 71 9 0800-4102</p>
+
+        <div style="height: 200px;"></div> <!-- Espaço em branco abaixo do conteúdo -->
+    </div>
+   
+</body>
+</html>
