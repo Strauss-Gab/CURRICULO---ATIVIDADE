@@ -8,9 +8,9 @@ Este currículo inclui informações fictícias sobre a vida acadêmica e profis
 
 🛠️ Tecnologias Utilizadas
 
-HTML5
+HTML
 
-CSS3
+CSS
 
 💡 Aprendizados
 
