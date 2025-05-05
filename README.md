@@ -20,8 +20,6 @@ Estruturação semântica com HTML
 
 Estilização com CSS (cores, fontes, layout)
 
-Responsividade (se aplicável)
-
 📂 Como Visualizar
 
 Clone este repositório:
